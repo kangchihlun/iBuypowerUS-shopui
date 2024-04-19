@@ -14,9 +14,7 @@ export interface Product {
   discountPrice:string;
 }
 
-export async function mock_data(): Promise<Product[]> {
-  // Simulate network delay (1.5 seconds)
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+export function mock_data(): Product[] {
 
   return [
     {

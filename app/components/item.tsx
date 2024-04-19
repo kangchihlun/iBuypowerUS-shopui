@@ -1,4 +1,7 @@
 import { Product } from '@/utils/fake_data';
+import Image from 'next/image'
+import AffirmLogo from '../../public/assets/Affirm_logo.svg.png';
+
 export interface ShopItemParams {
   prod: Product
   submitFunction: (param: any) => void
@@ -44,9 +47,31 @@ export function ShopItem(props:ShopItemParams) {
                     {props.prod.price}
                   </p>
                 </div>
+                <div className='text-black text-xs flex border-0 bg-transparent !pl-0 text-start'>
+                    <p className='a-affirm-as-low-as marginBottom0'>
+                      Starting at
+                      <span className='p-1 text-[#1694f5]'> $126/mo</span>
+                      with &nbsp;
+                    </p>
+                    <div className='relative bottom-1'>
+                      <Image src={AffirmLogo} alt="affirm" className="w-9 h-auto "/>
+                    </div>
+                </div>
               </div>
               <div className=' flex justify-between gap-2  xl:!gap-1 mt-5 3xs:!flex-col 3xsMax:!flex-col 2xs:!flex-row xs:!flex-row'>
-                  
+                  <div className='flex flex-col text-black items-start'>
+                    <span className='text-xs font-bold'>Free Shipping</span>
+                    <span className='overflow-hidden text-ellipsis whitespace-nowrap text-xs'>Delivery By Tuesday, Apr 23</span>
+                  </div>
+                  <div className=''>
+                    <button className='bg-white hover:!bg-[#fe1b1b] hover:text-gray-50 hover:border-[#F2F6FA]
+                      rounded-full py-[0.5rem] px-10 transition duration-300 ease-in-out !border 
+                      !border-solid text-base  relative flex text-center text-xs
+                       2xs:text-sm border-solid border-[#fe1b1b] text-[#fe1b1b] 
+                       hover:!text-white !text-center !px-3 !py-1 rounded-[30px] !bg-transparent'>
+                      Buy Now
+                    </button>
+                  </div>
               </div>
             </div>
           </div>
