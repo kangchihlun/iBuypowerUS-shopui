@@ -63,7 +63,7 @@ export function ShopItem(props:ShopItemParams) {
                     <span className='text-xs font-bold'>Free Shipping</span>
                     <span className='overflow-hidden text-ellipsis whitespace-nowrap text-xs'>Delivery By Tuesday, Apr 23</span>
                   </div>
-                  <div className=''>
+                  <div className='mt-2'>
                     <button className='bg-white hover:!bg-[#fe1b1b] hover:text-gray-50 hover:border-[#F2F6FA]
                       rounded-full py-[0.5rem] px-10 transition duration-300 ease-in-out !border 
                       !border-solid text-base  relative flex text-center text-xs

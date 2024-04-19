@@ -69,7 +69,6 @@ export function mock_data(): Product[] {
       price:"$2,299",
       discountPrice:"$1,949"
     },
-    /*
     {
       name: 'RDY Y40P 003',
       image: "https://content.ibuypower.com/cdn-cgi/image/width=640,format=auto,quality=75/https://content.ibuypower.com/Images/Components/27467/gaming-pc-01-Y40P001-main-kbm-400-.png?v=e8107872fac55e7fe8d4cacb80fea625685054b0",
@@ -96,6 +95,6 @@ export function mock_data(): Product[] {
       price:"$1,299",
       discountPrice:"$1,049"
     },
-    */
+    
   ];
 }
