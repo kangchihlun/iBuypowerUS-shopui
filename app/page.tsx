@@ -4,12 +4,21 @@ import { ShopList } from "./components/itemList"
 export default function Home() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-center text bg-white p-24">
-        <div className="text-center text-xl font-bold text-black leading-loose pt-12 pl-28 pr-28 pb-2">Best Selling Gaming PC</div>
-        <div className="text-center text-xl font-bold text-black leading-tight mt-36 ml-20 w-274 h-33">Prebuilt & Custom</div>
-        <ShopList/>
-      </div>
-      
+      <div id="items" className="py-16 bg-white md:py-44 lg:py-40">
+            <div className="px-5 md:px-10">
+                <div className="mx-auto w-full max-w-7xl">
+                    <div className="mx-auto w-full max-w-3xl">
+                        <div className="text-center">
+                            <div className="mx-auto font-bold mt-4 max-w-[528px] mb-8 md:mb-12 lg:mb-16">
+                                <h2 className="text-3xl text-black">Best Seller Gaming PC</h2>
+                                <p className="text-lg text-black">Prebuilt & Custom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ShopList/>
+                </div>
+            </div>
+        </div>
     </>
     
   );
