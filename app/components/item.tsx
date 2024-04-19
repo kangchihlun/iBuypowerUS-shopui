@@ -25,11 +25,11 @@ export function ShopItem(props:ShopItemParams) {
                 <h4 className="!m-0 line-clamp-2 min-h-[40px] text-ellipsis text-black whitespace-normal text-[16px] font-bold leading-[20px] hover:text-[#fe1b1b]">{props.prod.name}</h4>
                 <span className='relative !top-[2px] h-[20px] !px-1'></span>
                 <ul className='flex flex-col items-start gap-2 text-black overflow-hidden md:gap-1'>
-                  <li className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Operating System"]}</li>
-                  <li className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["CPU"]}</li>
-                  <li className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Memory"]}</li>
-                  <li className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Graphic"]}</li>
-                  <li className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Storage"]}</li>
+                  <li key={'os'} className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Operating System"]}</li>
+                  <li key={'cpu'} className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["CPU"]}</li>
+                  <li key={'mem'} className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Memory"]}</li>
+                  <li key={'grp'} className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Graphic"]}</li>
+                  <li key={'sto'} className='list-none whitespace-normal text-start text-xs xl:text-sm'>{props.prod.spec["Storage"]}</li>
                 </ul>
               </div> 
             </div>
@@ -53,7 +53,7 @@ export function ShopItem(props:ShopItemParams) {
                       <span className='p-1 text-[#1694f5]'> $126/mo</span>
                       with &nbsp;
                     </p>
-                    <div className='relative bottom-1'>
+                    <div className='affirmlogo'>
                       <Image src={AffirmLogo} alt="affirm" className="w-9 h-auto "/>
                     </div>
                 </div>

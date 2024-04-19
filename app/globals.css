@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .affirmlogo {
+    position:relative;
+    bottom: 0.175rem;
+  };
+  .aspect-ratio-43 {
+    aspect-ratio: 4 / 3;
+  }
+  /* ... */
+}
