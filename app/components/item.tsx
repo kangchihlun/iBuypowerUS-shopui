@@ -8,7 +8,7 @@ export interface ShopItemParams {
 export function ShopItem(props:ShopItemParams) {
     return (
         <>
-          <div className="flex h-full shrink-0 flex-col justify-between rounded-[10px] bg-white [box-shadow:rgb(0,_0,_0)] shadow-lg !mx-[12.5px] text-ellipsis whitespace-nowrap 3xs:w-[280px] 3xsMax:w-[260px] 2xs:w-[350px]">
+          <div className="flex h-full shrink-0 flex-col justify-between rounded-[10px] bg-white [box-shadow:rgb(0,_0,_0)] shadow-lg !mx-[12.5px] text-ellipsis whitespace-nowrap 3xs:w-[280px] 3xsMax:w-[260px] 2xs:w-[398px]">
             <div className="relative flex h-full flex-col gap-2 !p-5 overflow-hidden text-ellipsis whitespace-nowrap">
               <span className="absolute left-5 top-6 flex h-7 w-[70px] justify-start">
                 <img alt="prebuild" loading="lazy" width="70" height="22" decoding="async" data-nimg="1" src="https://content.ibuypower.com/production/assets/icons/svg/prebuild_badge.svg"></img>
@@ -35,6 +35,14 @@ export function ShopItem(props:ShopItemParams) {
                 <div className='flex w-fit !border-0 bg-[#fe1b1b] py-1 text-white gap-1 rounded-full px-2 text-[11px]'>
                   <span>SAVE</span>
                   <span>$4500</span>
+                </div>
+                <div className='flex text-black items-end gap-3 mt-3'>
+                  <p className="text-[20px] font-bold">
+                    {props.prod.discountPrice}
+                  </p>
+                  <p className='relative bottom-1 !my-0 text-xs text-gray-400 line-through'>
+                    {props.prod.price}
+                  </p>
                 </div>
               </div>
               <div className=' flex justify-between gap-2  xl:!gap-1 mt-5 3xs:!flex-col 3xsMax:!flex-col 2xs:!flex-row xs:!flex-row'>
