@@ -1,21 +1,14 @@
-import { submitForm } from '../actions/submitForm';
+import { Product } from '@/utils/fake_data';
+export interface ShopItemParams {
+  prod: Product
+  submitFunction: (param: any) => void
+}
 
 
-export function ShopItem() {
-    const handleSubmit = async (event:any) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-      
-        try {
-          const response = await submitForm(formData);
-          console.log(response.message); // "Form submitted successfully!"
-          // Handle successful submission (e.g., show a success message)
-        } catch (error:any) {
-          console.error(error.message);
-          // Handle submission errors
-        }
-      };
+export function ShopItem(props:ShopItemParams) {
     return (
-        <></>
+        <>
+          <div className="text-left text-lg font-bold text-black leading-tight mt-22 ml-44 w-353 h-26">{props.prod.name}</div>
+        </>
     )
 }
