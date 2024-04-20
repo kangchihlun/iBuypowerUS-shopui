@@ -39,7 +39,7 @@ export function ShopList() {
                     <button onClick={() => handlePageChange('right')} className="w-10 h-10 bg-white border-3 font-bold text-black shadow-md rounded-sm opacity-100"> &gt; </button>
                 </div>
             </div>
-            <div className="mx-auto grid max-w-[1910px] grid-cols-5 justify-items-center gap-3 sm:grid-cols-2 sm:justify-items-stretch md:grid-cols-4 md:gap-4 lg:gap-3">
+            <div className="mx-auto grid max-w-[1910px] grid-cols-1 justify-items-center gap-3 sm:grid-cols-1 sm:justify-items-stretch md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-3">
                 {shopItemProps.map((itemProps) => (
                     <>
                         <ShopItem {...itemProps} />  
