@@ -1,4 +1,11 @@
 ## Shop Item List Demo
+### Features
+- Next.js14
+- Typescript
+- Tailwindcss
+- Pagenation
+
+### Screenshot
 ![widscreen](public/feat01.png)
 ![mobile](public/feat02.png)
 ---
